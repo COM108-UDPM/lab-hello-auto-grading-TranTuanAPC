@@ -19,5 +19,6 @@ int main() {
     printf("Hello, World!\n");
 
     // Kết thúc chương trình
+    return 0;
 
 }
