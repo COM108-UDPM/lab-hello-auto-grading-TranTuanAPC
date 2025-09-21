@@ -13,3 +13,12 @@
 
 // }
 
+int main() {
+
+    // In ra "Hello, World!"
+
+    printf("Hello, World!\n");
+
+    // Kết thúc chương trình
+
+}
