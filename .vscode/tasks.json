@@ -1,0 +1,28 @@
+{
+    "tasks": [
+        {
+            // Đặt tên cho task configuration
+            "label": "C/C++: gcc.exe build HELLO auto-grading",
+            // Kiểu chạy shell khi build
+            "type": "shell",
+            // Đường dẫn đến trình biên dịch gcc
+            "command": "C:\\msys64\\ucrt64\\bin\\gcc.exe",
+            "args": [
+                // File source cần biên dịch
+                "${workspaceFolder}\\hello.c",
+                // "-o", "my_program.exe": Chỉ định tên file output
+                "-o",
+                "${workspaceFolder}\\my_program.exe",
+                // Các tùy chọn bổ sung cho trình biên dịch
+                "-fdiagnostics-color=always",
+                // "-g": Bật chế độ gỡ lỗi
+                "-g"
+            ],
+            "group": "build",
+            "detail": "Biên dịch chương trình HELLO auto-grading bằng gcc",
+            // Cấu hình để hiển thị lỗi và cảnh báo từ trình biên dịch
+            "problemMatcher": "$gcc"
+        }
+    ],
+    "version": "2.0.0"
+}
